@@ -21,3 +21,10 @@ services:
       context: "./c_notrix"
     ports:
     - 8120:8000
+
+  rusted_rocket:
+    image: meleneth/asyncbenchmarks_rusted_rocket
+    build:
+      context: "./rusted_rocket"
+    ports:
+    - 8130:8130
