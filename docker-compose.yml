@@ -1,9 +1,23 @@
 ---
 version: '3.8'
 services:
-  asyncbenchmarks:
-    image: meleneth/asyncbenchmarks
+  async_ruby:
+    image: meleneth/asyncbenchmarks_ruby
     build:
-      context: "./"
+      context: "./async_ruby"
     ports:
-    - 8000:8000
+    - 8100:8000
+
+  nginx:
+    image: meleneth/asyncbenchmarks_nginx
+    build:
+      context: "./nginx"
+    ports:
+    - 8110:80
+
+  c_notrix:
+    image: meleneth/asyncbenchmarks_c_notrix
+    build:
+      context: "./c_notrix"
+    ports:
+    - 8120:8000

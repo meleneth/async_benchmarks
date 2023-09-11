@@ -1,0 +1,5 @@
+I'm not currently sure why for every request we see MAIN: startup.
+
+It sounds rather like it's running a new copy of the program for each request, which is ludicrous
+
+
