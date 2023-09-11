@@ -22,7 +22,7 @@
 #define PORT "8000" 
 
 // how many pending connections queue will hold
-#define BACKLOG 10 
+#define BACKLOG 100
 #define MAXDATASIZE 4096
 
 void sigchld_handler(int s) {
