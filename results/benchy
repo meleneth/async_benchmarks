@@ -1,4 +1,5 @@
 ab -n 50000 -c 128 http://localhost:8100/ > ab_n50000_c128_ruby_http_async.txt
 ab -n 50000 -c 128 http://localhost:8110/ > ab_n50000_c128_nginx.txt
 ab -n 50000 -c 128 http://localhost:8120/ > ab_n50000_c128_c_notrix.txt
+ab -n 50000 -c 128 http://localhost:8130/ > ab_n50000_c128_rusted_rocket.txt
 
