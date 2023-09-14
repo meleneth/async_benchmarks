@@ -1,5 +1,5 @@
 AC_PREREQ([2.69])
-AC_INIT([notrix],[0.1],[meleneth@gmail.com])
+AC_INIT([c_multithreaded],[0.1],[meleneth@gmail.com])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror subdir-objects])
 
 AC_PROG_CC

@@ -16,9 +16,9 @@ services:
     - 8110:80
 
   c_notrix:
-    image: meleneth/asyncbenchmarks_c_notrix
+    image: meleneth/asyncbenchmarks_c_multithreaded
     build:
-      context: "./c_notrix"
+      context: "./c_multithreaded"
     ports:
     - 8120:8000
 

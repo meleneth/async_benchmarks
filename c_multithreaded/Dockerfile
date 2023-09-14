@@ -9,7 +9,7 @@ RUN mkdir -p /data/app/build
 WORKDIR /data/app/sources
 
 COPY configure.ac Makefile.am .
-COPY src/notrix.c src/notrix.c
+COPY src/c_multithreaded.c src/c_multithreaded.c
 
 RUN autoreconf -i
 
@@ -17,5 +17,5 @@ WORKDIR /data/app/build
 RUN ../sources/configure
 RUN make V=1 VERBOSE=1
 
-CMD ["./notrix"]
+CMD ["./c_multithreaded"]
 
